@@ -48,8 +48,6 @@ class Owner
     Dog.new(dog, self)
   end
 
-  ## RY af, come back and DRY 
-
   def my_dogs
     Dog.all.select {|dog| dog.owner == self}
   end
